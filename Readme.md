@@ -2,6 +2,7 @@
 
 * Студент: [Татьяна Кузнецова](https://up.htmlacademy.ru/htmlcss/40/user/2499003).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Мой проект SEDONA]( https://tatikuznetsova.github.io/2499003-sedona-40/)
 
 ---
 
