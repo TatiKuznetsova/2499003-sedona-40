@@ -2,14 +2,14 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/ptsans-400.woff2) format(.woff2);
+    src: url(../fonts/ptsans-400.woff2) format(woff2);
     font-display: swap;
 }
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url(../fonts/ptsans-700.woff2) format(.woff2);
+    src: url(../fonts/ptsans-700.woff2) format(woff2);
     font-display: swap;
 }
 body {
@@ -23,11 +23,14 @@ body {
 a {
     text-decoration: none;
 }
-.navigation-header-items {
+.navigation-link {
+    font-family: inherit;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
     font-weight: 700;
+    text-align: center;
+    text-decoration: none;
 }
 .hero {
     background-image: url(../images/mountains-sedons.jpg);
@@ -91,6 +94,7 @@ a {
     text-align: center;
 }
 .button-first, .show-more {
+    font-family: "PT Sans", sans-serif;
     background-color: #756157;
     font-size: 16px;
     line-height: 20px;
@@ -114,6 +118,13 @@ a {
     text-align: center;
     text-transform: uppercase;
 }
+.email {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+}
 .subscription-index-description {
     font-size: 22px;
     line-height: 26px;
@@ -121,7 +132,12 @@ a {
     font-weight: 400;
     text-align: center;
 }
+.subscription-input {
+    font-family: inherit;
+    background-color: #f2f2f2;
+}
 .subscription-botton {
+    font-family: inherit;
     background-color: #82B3D3;
     font-size: 20px;
     color: #ffffff;
@@ -157,13 +173,15 @@ a {
     font-weight: 700;
     text-transform: capitalize;
 }
-.breadcrumbs-items, .catalog-filters-items {
+.breadcrumbs-items, .control {
+    font-family: inherit;
     font-size: 18px;
     line-height: 23px;
     color: #ffffff;
     font-weight: 400;
 }
 .button-second, .favorites {
+    font-family: inherit;
     background-color: #82B3D3;
     font-size: 16px;
     color: #ffffff;
@@ -173,6 +191,7 @@ a {
     text-align: center;
 }
 .button-reset {
+    font-family: inherit;
     font-size: 16px;
     color: #ffffff;
     line-height: 20px;
@@ -180,7 +199,15 @@ a {
     text-transform: uppercase;
     text-align: center;
 }
+.select-control {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+}
 .favorites-specific {
+    font-family: inherit;
     background-color: #7DB54F;
     font-size: 16px;
     color: #ffffff;
@@ -220,6 +247,22 @@ a {
     font-weight: 400;
     color: #333333;
     text-align: right;
+}
+.field {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #f2f2f2;
+}
+.price-from, .price-to {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: lowercase;
+    text-align: center;
 }
 .rating-result {
     background-color: #f2f2f2;
