@@ -166,7 +166,7 @@ a {
     padding: 80px 85px;
     justify-content: center;
     width: 400px;
-    height: 385px;
+    /* height: 385px; */
     box-sizing: border-box;
 }
 .advantages-items-first-title {
@@ -193,7 +193,7 @@ a {
     padding: 80px 85px;
     justify-content: center;
     width: 400px;
-    height: 385px;
+    /* height: 385px; */
     box-sizing: border-box;
 }
 .advantages-items-second-title {
@@ -220,7 +220,7 @@ a {
     padding: 80px 85px;
     justify-content: center;
     width: 400px;
-    height: 385px;
+    /* height: 385px; */
     box-sizing: border-box;
 }
 /*СЕРВИС*/
@@ -543,14 +543,55 @@ a {
     margin: 0 70px;
     padding: 0;
     list-style-type: none;
-    border-bottom: 1px solid #e6e6e6;
+    /* border-bottom: 1px solid #e6e6e6; */
     gap: 20px;
     margin-bottom: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
-/*ЕЩЕ НЕ РАЗОБРАЛА*/
+.hotel-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    grid-template-rows: auto 1fr;
+    gap: 16px;
+    padding: 20px;
+    width: 340px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1px #e6e6e6;
+}
+.hotel-card-link {
+    grid-column: 1/-1;
+}
+.hotel-card-image {
+    object-fit: scale-down;
+    height: auto;
+    max-width: 100%;
+}
+.hotel-card-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+.hotel-card-group {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+}
+.hotel-card-price {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+    justify-self: end;
+}
 .show-more {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
     background-color: #756157;
     font-size: 16px;
     line-height: 20px;
@@ -558,7 +599,53 @@ a {
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
+    padding: 8px 0;
+    border-radius: 4px;
+    border: none;
 }
+.favorites {
+    font-family: inherit;
+    background-color: #82B3D3;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 8px 0;
+    border-radius: 4px;
+    border: none;
+}
+.favorites-specific {
+    font-family: inherit;
+    background-color: #7DB54F;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 8px 0;
+    border-radius: 4px;
+    border: none;
+}
+.rating-result {
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: #333333;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    padding: 9px 22px 8px 23px;
+    border-radius: 4px;
+}
+/*ЕЩЕ НЕ РАЗОБРАЛА*/
+
 .filters-wrapper {
     background-image: url(../images/filter-background.jpg);
     background-color: #82B3D3;
@@ -568,7 +655,6 @@ a {
     padding: 0;
     margin: 0;
 }
-
 .catalog-filters {
     display: flex;
     align-items: flex-start;
@@ -603,7 +689,7 @@ a {
     color: #ffffff;
     font-weight: 400;
 }
-.button-second, .favorites {
+.button-second {
     font-family: inherit;
     background-color: #82B3D3;
     font-size: 16px;
@@ -622,35 +708,6 @@ a {
     text-transform: uppercase;
     text-align: center;
 }
-.favorites-specific {
-    font-family: inherit;
-    background-color: #7DB54F;
-    font-size: 16px;
-    color: #ffffff;
-    line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-}
-.hotel-card-title {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-    color: #000000;
-}
-.hotel-card-group {
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #333333;
-}
-.hotel-card-price {
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #333333;
-    text-align: right;
-}
 .field {
     font-family: inherit;
     font-size: 18px;
@@ -665,14 +722,5 @@ a {
     font-weight: 400;
     color: #000000;
     text-transform: lowercase;
-    text-align: center;
-}
-.rating-result {
-    background-color: #f2f2f2;
-    font-size: 16px;
-    color: #333333;
-    line-height: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
     text-align: center;
 }
